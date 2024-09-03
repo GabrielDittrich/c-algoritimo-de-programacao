@@ -27,6 +27,8 @@ int main()
     case 150:
         printf("Artigos esportivos");
         break;
+    default:
+        printf("Codigo Invalido");
     }
 
     return 0;
