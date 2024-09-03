@@ -1,34 +1,40 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 int main()
 {
+    float num1, num2;
+    char operador;
 
-    int codigo;
+    printf("Informe o primeiro numero: ");
+    scanf("%f", &num1);
 
-    printf("Informe codigo:  ");
-    scanf("%d", &codigo);
-    printf("\n");
+    printf("Informe o segundo numero: ");
+    scanf("%f", &num2);
 
-    switch (codigo)
+    printf("\nQual operação você quer fazer?\n");
+    scanf(" %c", &operador);
+
+    switch (operador)
     {
-    case 110:
-        printf("Véstuario");
+    case '+':
+        printf("A soma desses números da: %.2f", num1 + num2);
         break;
-    case 120:
-        printf("Eletrodomestico");
+    case '-':
+        printf("A subtração desses números da: %.2f", num1 - num2);
         break;
-    case 130:
-        printf("Informatica");
+    case '*':
+        printf("A multiplicação desses números da: %.2f", num1 * num2);
         break;
-    case 140:
-        printf("Livraria");
+    case '/':
+        if (num2 == 0)
+        {
+            printf("Dividir por 0 é invalido");
+        }
+        else
+        {
+            printf("A divisão desses números da: %.2f", num1 / num2);
+        }
         break;
-    case 150:
-        printf("Artigos esportivos");
-        break;
-    default:
-        printf("Codigo Invalido");
     }
 
     return 0;
