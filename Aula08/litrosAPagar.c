@@ -29,7 +29,6 @@ int main()
         printf("Valor R$ %.2f\n", pagar);
         break;
 
-        break;
     case 2:
         printf("Quantos litros deseja abastecer?\n");
         scanf("%f", &litros);
