@@ -43,6 +43,10 @@ int main()
         }
         printf("Valor R$ %.2f\n", pagar);
         break;
+
+    default:
+        printf("Opção inválida!\n");
+        break;
     }
 
     return 0;
