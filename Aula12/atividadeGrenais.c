@@ -1,46 +1,43 @@
 #include <stdio.h>
-// A Federação Gaúcha de Futebol contratou você para escrever um programa para fazer uma estatística do resultado de vários GRENAIS.
-// Escreva um algoritmo para ler o número de gols marcados pelo Inter, o número de gols marcados pelo GRÊMIO em um GRENAL,
-// imprimindo o nome do time vitorioso ou a palavra EMPATE. Logo após escrever a mensagem "Novo GRENAL (S/N)?" e solicitar uma resposta.
-int main()
-{
-    int gremio = 0, inter = 0;
-    int pts_gremio = 0, pts_inter = 0, empate = 0, total = 0;
-    int controle = 1;
-    do
-    {
+
+int main() {
+    int gols_gremio = 0, gols_inter = 0;
+    int pts_gremio = 0, pts_inter = 0, empates = 0;
+    int total_gols_gremio = 0, total_gols_inter = 0;
+    int continuar = 1;
+
+    do {
         printf("Quantos gols o Grêmio marcou?\n");
-        scanf("%d", &gremio);
-
+        scanf("%d", &gols_gremio);
+        
         printf("Quantos gols o Inter marcou?\n");
-        scanf("%d", &inter);
+        scanf("%d", &gols_inter);
 
-        if (gremio >= inter)
-        {
-            printf("\nGrêmio Ganhou!");
+        total_gols_gremio += gols_gremio;
+        total_gols_inter += gols_inter;
+
+        if (gols_gremio > gols_inter) {
+            printf("\nGrêmio Ganhou!\n");
             pts_gremio++;
-        }
-        else if (inter >= gremio)
-        {
-            printf("\nInter Ganhou!");
+        } else if (gols_inter > gols_gremio) {
+            printf("\nInter Ganhou!\n");
             pts_inter++;
+        } else {
+            printf("\nEmpate\n");
+            empates++;
         }
-        else
-        {
-            printf("\nEmpate");
-            empate++;
-        }
-        printf("\nContinuar o Programa?\n1 - Sim \n0 - Não\n");
-        scanf("%d", &controle);
-        printf("\n");
-    } while (controle != 0);
 
-    total = pts_gremio + pts_inter;
-    printf("\nTeve %d Grenal na estatística\n", total);
-    printf("\nO Inter Ganhou %d vezes", pts_inter);
-    printf("\nO Grêmio Ganhou %d vezes", pts_gremio);
-    printf("\nTeve %d empates\n", empate);
-    printf("\nContando todas as partidas\nGrêmio fez %d gols\nInter fez %d gols.", gremio, inter);
+        printf("\nContinuar o Programa?\n1 - Sim \n0 - Não\n");
+        scanf("%d", &continuar);
+        printf("\n");
+    } while (continuar != 0);
+
+    int total_partidas = pts_gremio + pts_inter + empates;
+    printf("\nTeve %d Grenais na estatística\n", total_partidas);
+    printf("O Inter Ganhou %d vezes\n", pts_inter);
+    printf("O Grêmio Ganhou %d vezes\n", pts_gremio);
+    printf("Teve %d empates\n", empates);
+    printf("Contando todas as partidas:\nGrêmio fez %d gols\nInter fez %d gols.\n", total_gols_gremio, total_gols_inter);
 
     return 0;
 }
