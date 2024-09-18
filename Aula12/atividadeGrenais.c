@@ -1,28 +1,37 @@
 #include <stdio.h>
-
-int main() {
+// A Federação Gaúcha de Futebol contratou você para escrever um programa para fazer uma estatística do resultado de vários GRENAIS.
+// Escreva um algoritmo para ler o número de gols marcados pelo Inter, o número de gols marcados pelo GRÊMIO em um GRENAL,
+// imprimindo o nome do time vitorioso ou a palavra EMPATE. Logo após escrever a mensagem "Novo GRENAL (S/N)?" e solicitar uma resposta.
+int main()
+{
     int gols_gremio = 0, gols_inter = 0;
     int pts_gremio = 0, pts_inter = 0, empates = 0;
     int total_gols_gremio = 0, total_gols_inter = 0;
     int continuar = 1;
 
-    do {
+    do
+    {
         printf("Quantos gols o Grêmio marcou?\n");
         scanf("%d", &gols_gremio);
-        
+
         printf("Quantos gols o Inter marcou?\n");
         scanf("%d", &gols_inter);
 
         total_gols_gremio += gols_gremio;
         total_gols_inter += gols_inter;
 
-        if (gols_gremio > gols_inter) {
+        if (gols_gremio > gols_inter)
+        {
             printf("\nGrêmio Ganhou!\n");
             pts_gremio++;
-        } else if (gols_inter > gols_gremio) {
+        }
+        else if (gols_inter > gols_gremio)
+        {
             printf("\nInter Ganhou!\n");
             pts_inter++;
-        } else {
+        }
+        else
+        {
             printf("\nEmpate\n");
             empates++;
         }
