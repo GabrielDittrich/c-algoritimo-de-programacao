@@ -11,9 +11,11 @@ struct Conta
 int main()
 {
     struct Conta conta[3] = {{1, "Gabriel", 0}, {2, "Marcelo", 0}, {3, "Joao", 0}};
-    int menu = 0, i;
+
+    int menu = 0, i, verificado = 0;
     char nome[31];
     float deposito = 0, saque = 0;
+
     do
     {
         printf("\n**** Menu ****");
@@ -35,42 +37,70 @@ int main()
             break;
 
         case 2:
-            printf("Qual cliente você quer depositar? ");
+            printf("\nQual cliente você quer depositar? ");
             scanf(" %30[^\n]", nome);
+            verificado = 0;
 
             for (i = 0; i < 3; i++)
             {
                 if (strcmp(nome, conta[i].nome) == 0)
                 {
-                    printf("Qual valor deseja depositar: ");
+                    verificado = 1;
+                    printf("\nQual valor deseja depositar: ");
                     scanf("%f", &deposito);
 
-                    conta[i].saldo = conta[i].saldo + deposito;
-                    printf("A conta %s foi depositada!", conta[i].nome);
+                    conta[i].saldo += deposito;
+                    printf("\nA conta foi depositada!", conta[i].nome);
                     break;
                 }
-                printf("\nA conta não foi achada");
+            }
+            if (!verificado)
+            {
+                printf("\nA conta não foi encontrada");
+            }
+            break;
+        case 3:
+            printf("\nQual cliente deseja sacar? ");
+            scanf(" %30[^\n]", nome);
+            verificado = 0;
 
-                break;
-
-            case 3:
-                for (i = 0; i < 3; i++)
+            for (i = 0; i < 3; i++)
+            {
+                if (strcmp(nome, conta[i].nome) == 0)
                 {
-
-                    printf("Qual cliente deseja sacar? ");
-                    scanf(" %30[^\n]", nome);
-
-                    if (strcmp(nome, conta[i].nome))
-                        printf("Quanto você deseja sacar? ");
+                    verificado = 1;
+                    printf("\nQuanto deseja sacar? ");
                     scanf("%f", &saque);
 
-                    conta[i].saldo = conta[i].saldo - saque;
+                    if (conta[i].saldo >= saque)
+                    {
 
-                    printf("Agora a sua conta tem: %.2f", conta[i].saldo);
+                        conta[i].saldo = conta[i].saldo - saque;
+                        printf("\nSaque realizado!");
+                        printf("\nAgora a sua conta tem: %.2f", conta[i].saldo);
+                    }
+                    else
+                    {
+                        printf("\nValor do saque maior que o saldo na conta");
+                    }
+                    break;
                 }
             }
+            if (!verificado)
+            {
+                printf("\nConta não foi encontrada");
+            }
+            break;
+        case 4:
+            printf("Finalizando Programa...");
+            break;
+        default:
+            printf("Opção inválida. Tente novamente.\n");
+            break;
         }
-    } while (menu != 0);
+    }
+
+    while (menu != 4);
 
     return 0;
 }
