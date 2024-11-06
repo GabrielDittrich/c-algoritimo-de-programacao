@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+// Escreva um programa que alimente manualmente um vetor de 10 elementos inteiros.
+// Em seguida, solicite um número ao usúario e apresente quantas vezes o número informado
+// aparece no vetor
 int main()
 {
     int vetor[10] = {1, 2, 2, 4, 5, 6, 6, 9, 9, 9};

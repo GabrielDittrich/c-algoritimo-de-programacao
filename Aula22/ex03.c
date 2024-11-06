@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+// Escreva um programa que preencha uma matriz 2 x 3 com elementos informados pelo usúario.
+// Em seguida, apresente o menor e o maior elemento da matriz
 int main()
 {
     int matriz[2][3];
