@@ -9,8 +9,6 @@ A disciplina foi fundamental para a consolidação da **lógica de programação
 ## 👨‍🏫 Professor
 
 Marcelo Fassina  
-Semestre 2024/2  
-120 horas-aula | 100 horas-relógio
 
 ---
 
