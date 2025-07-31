@@ -1,41 +1,66 @@
-# Algoritmos de Sistemas - Universidade Positivo  
+# 📘 Algoritmos de Sistemas - Universidade Positivo
 
-Este repositório contém os exercícios e projetos desenvolvidos na disciplina de **Algoritmos de Sistemas** do curso de **Análise e Desenvolvimento de Sistemas** na Universidade Positivo.  
+Este repositório contém os **exercícios e projetos desenvolvidos na disciplina de Algoritmos de Sistemas**, parte integrante do curso de **Análise e Desenvolvimento de Sistemas da Universidade Positivo**.
 
-## Objetivo  
-O objetivo desta disciplina é introduzir e consolidar conceitos fundamentais de programação estruturada, utilizando a linguagem **C** para resolver problemas computacionais de maneira eficiente.  
+A disciplina foi fundamental para a consolidação da **lógica de programação** e introdução ao pensamento computacional, utilizando a linguagem **C** como base para desenvolvimento estruturado de algoritmos.
 
-## Conteúdo abordado  
-Ao longo da disciplina, foram explorados os seguintes tópicos:  
+---
 
-- **Estruturas Condicionais**  
-  - `if`, `else`, `else if`
-  - **`switch-case`**: uso de múltiplas condições com casos específicos
-  - Operadores lógicos e relacionais  
-  - Decisões aninhadas  
+## 👨‍🏫 Professor
 
-- **Estruturas de Repetição**  
-  - `for`, `while`, `do-while`  
-  - Controle de fluxo (`break`)  
+Marcelo Fassina  
+Semestre 2024/2  
+120 horas-aula | 100 horas-relógio
 
-- **Estruturas de Dados Homogêneas**  
-  - **Vetores**: manipulação de arrays unidimensionais  
-  - **Matrizes**: arrays bidimensionais para armazenar dados tabulares  
-  - **Strings**: manipulação de cadeias de caracteres  
+---
 
-- **Estruturas de Dados Heterogêneas**  
-  - **Registros**: criação e uso de `struct` para organizar dados complexos  
+## 🎯 Objetivo da Disciplina
 
-- **Modularização**  
-  - Separação de código em funções para facilitar a reutilização e legibilidade  
-  - Declaração de protótipos e arquivos de cabeçalho (`.h`)  
+Introduzir e consolidar os **fundamentos da programação estruturada**, promovendo a compreensão de algoritmos e estruturas básicas de dados por meio de resolução de problemas computacionais, usando **C** e **pseudocódigo**.
 
-## Como executar os códigos  
+---
 
-1. **Opção 1: Executar diretamente no navegador**  
-   - Acesse o código na pasta correspondente.  
-   - Copie e cole o código no compilador online da **Programiz C Compiler** ([link aqui](https://www.programiz.com/c-programming/online-compiler/)).  
-   - Execute o programa diretamente no navegador.  
+## 📚 Conteúdos Abordados
+
+### 🔤 Conceitos Iniciais
+- Tipos de dados, constantes e variáveis
+- Entrada, processamento e saída de dados
+- Precedência de operadores
+
+### ⚙️ Estruturas de Decisão
+- `if`, `else`, `else if`
+- `switch-case`
+- Operadores lógicos e relacionais
+- Decisões aninhadas
+
+### 🔁 Estruturas de Repetição
+- `for`, `while`, `do-while`
+- Controle de fluxo: `break` e `continue`
+- Laços aninhados
+
+### 📊 Estruturas de Dados Homogêneas
+- **Vetores** (arrays unidimensionais)
+- **Matrizes** (arrays bidimensionais)
+- **Strings** (cadeias de caracteres)
+
+### 🧩 Estruturas de Dados Heterogêneas
+- `struct`: uso de registros para organizar dados complexos
+
+### 🧠 Modularização
+- Funções e procedimentos
+- Passagem de parâmetros por valor e por referência
+- Declaração de protótipos e arquivos de cabeçalho (`.h`)
+- Escopo de variáveis (locais e globais)
+
+---
+
+## 🛠️ Como Executar os Códigos
+
+### ✅ Opção 1: Executar no navegador (sem instalação)
+1. Acesse o código na pasta correspondente
+2. Copie e cole no compilador online: [Programiz C Compiler](https://www.programiz.com/c-programming/online-compiler)
+3. Execute diretamente pelo navegador
+
 
 2. **Opção 2: Executar localmente**  
    - Clone o repositório para o seu computador:  
@@ -46,4 +71,19 @@ Ao longo da disciplina, foram explorados os seguintes tópicos:
    - Certifique-se de que você tenha um compilador C configurado (como GCC).  
    - Compile e execute os arquivos conforme a orientação da ferramenta escolhida.  
 
-Caso precise de ajuda para configurar sua IDE ou o compilador, consulte a documentação oficial ou as anotações disponíveis no repositório.  
+---
+
+#### 📄 Bibliografia da Disciplina
+Forbellone, A. L. V. – Lógica de Programação: a construção de algoritmos
+
+Manzano, J. A. N. G. – Algoritmos: lógica para desenvolvimento de programação
+
+Medina, M. – Algoritmos e Programação: teoria e prática
+
+Ziviani, N. – Projeto de algoritmos: com implementações em C
+
+#### 📝 Observações
+Todos os projetos desenvolvidos têm fins educacionais, representando minha jornada de aprendizado em programação estruturada e resolução algorítmica de problemas. Esta disciplina foi a base para o desenvolvimento posterior com linguagens orientadas a objetos e estruturas mais complexas.
+
+
+
